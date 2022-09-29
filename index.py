@@ -2,8 +2,16 @@ from PIL import Image
 
 print(Image)
 
-image_old = "./src/main-img_03_b.png"
-image_new = "./src/main-img_03_b.webp"
+# image_old = "./src/page4/testResult_card-4.png"
+# image_new = "./src/page4/testResult_card-4.webp"
 
-im = Image.open(image_old)
-im.save(image_new, format = "WebP", lossless = True)
+
+page=""
+name="class1Laser"
+
+
+image_o = f"./src/{page}/{name}.png"
+image_n = f"./src/{page}/{name}.webp"
+
+im = Image.open(image_o)
+im.save(image_n, format = "WebP", lossless = False)
