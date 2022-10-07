@@ -33,6 +33,7 @@ def convert_image():
     for x in filteredList:
         # print(x)
         im = Image.open(f"./src/{x}")
+
         y = x.replace(".png",".webp")
         # print(y)
         im.save(f"./src/{folderName}/{y}", format="WebP",lossless=False)
