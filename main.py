@@ -9,10 +9,9 @@ data_files = [x[2] for x in os.walk("./src/")]
 prefiltering = data_files[0]
 
 filtered = filter(lambda el: el.__contains__(".png") | el.__contains__("jpg"), prefiltering)
-
 filteredList = (list(filtered))
 
-# print(filteredList)
+print(filteredList)
 
 # 현재시간(폴더 제작용)
 
