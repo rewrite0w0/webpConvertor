@@ -40,8 +40,6 @@ def convert_image():
 
 def init():
     makeList()
-
-
     # print(len(arr))
     convert_image()
 
